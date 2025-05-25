@@ -2,8 +2,8 @@ import SocialLinks from "./socialLinks";
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center justify-center gap-2 p-4  w-full pb-safe text-md">
-            <div className="flex items-center gap-4">
+        <footer className="flex flex-col items-center justify-center gap-2 p-6 w-full pb-safe text-md">
+            <div className="flex items-center gap-4 mb-3">
                 <SocialLinks />
             </div>
             <div>
