@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         fontColor: "#ccd6f6", 
-        footerFontColor: '#37527C',
+        footerfont: '#37527C',
         navBg: "#060e1a"
       },
       fontFamily: {
