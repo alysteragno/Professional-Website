@@ -1,18 +1,23 @@
 import SocialLinks from './socialLinks';
 import Lightmode from './lightmode';
+import { Open_Sans } from 'next/font/google';
+const openSans = Open_Sans({ subsets: ['latin'], weight: ['400'] });
 
 
 export default function Header() {
   return (
-    <header className='justify-between flex items-center p-4'>
+    <header className={`${openSans.className} fixed top-0 left-0 w-full justify-between flex items-center p-4 `}>
       <div>
-        <h3>Alyster A.</h3>
+        <a href="#">
+          <h3 className='text-lg leading-4 tracking-wide font-bold'>ALYSTER A.</h3>
+        </a>
       </div>
-
       <nav className='flex items-center gap-3'>
         <SocialLinks />
         <Lightmode/>
+
       </nav>
     </header>
+    
   );
 }
