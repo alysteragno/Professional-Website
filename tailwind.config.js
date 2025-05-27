@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -8,7 +7,6 @@ module.exports = {
       colors: {
         fontColor: "#ccd6f6", 
         footerfont: '#37527C',
-        navBg: "#060e1a"
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'], 
@@ -17,12 +15,10 @@ module.exports = {
     },
     screens: {
       'tablet': '640px',
-
       'laptop': '1024px',
-
       'desktop': '1280px',
     },
   },
-  darkMode: 'class', // or 'media'
+  darkMode: 'class',
   plugins: [],
 }

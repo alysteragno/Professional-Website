@@ -24,7 +24,7 @@ const socmeds = [
 export default function Footer() {
   return (
     <footer
-      className={`${ntr.className} gap-2 p-6 w-full text-md`} 
+      className={`${ntr.className} gap-2 p-6 w-full text-md `} 
     >
       <div className="flex items-center gap-4 mb-3">
        
@@ -48,11 +48,11 @@ export default function Footer() {
       <div>
         <Link 
             href="https://www.linkedin.com/in/alyster-marasigan-9314692ba/" target="_blank" rel="linkedin link">
-            <h3 className="hover:underline font-bold">Developed by Alyster A.</h3>
+            <h3 className="hover:underline font-bold desktop:hidden">Developed by Alyster A.</h3>
         </Link>
       </div>
       <div>
-        <h4>All rights reserved.</h4>
+        <h4 className="desktop:hidden">All rights reserved.</h4>
       </div>
     </footer>
   );
