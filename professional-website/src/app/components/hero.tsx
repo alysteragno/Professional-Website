@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <main className="min-h-screen flex justify-center items-center">
       <div className="text-center py-10">
-        <h1 className="text-4xl font-bold animate-bounce animate">
+        <h1 className="text-4xl font-bold animate-bounce">
           Hi there! I'm{' '}
           <Link
             href={links.linkedin}
@@ -22,7 +22,7 @@ export default function Hero() {
           </Link>
         </h1>
 
-        <h2 className="text-2xl font-semibold mt-4">
+        <h2 className="text-2xl font-semibold">
           <Link
             href={links.nextjs}
             target="_blank"
@@ -35,7 +35,7 @@ export default function Hero() {
             href={links.frontend}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline text-secondary"
+            className="hover:underline text-tertiary"
           >
             Front-End Developer
           </Link>
