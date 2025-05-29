@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "tailwindcss-animated": "^2.0.0"
   }
 }
