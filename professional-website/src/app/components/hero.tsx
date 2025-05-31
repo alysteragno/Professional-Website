@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Arrow from './arrow';
 
 const links = {
   linkedin: 'https://www.linkedin.com/in/alyster-marasigan-9314692ba/',
@@ -8,7 +9,7 @@ const links = {
 
 export default function Hero() {
   return (
-    <main className="min-h-screen flex justify-center items-center">
+    <main className="min-h-screen flex flex-col justify-center items-center">
       <div className="text-center py-10">
         <h1 className="text-4xl font-bold animate-bounce">
           Hi there! I'm{' '}
@@ -41,6 +42,7 @@ export default function Hero() {
           </Link>
         </h2>
       </div>
+      <Arrow/>
     </main>
   );
 }
