@@ -24,6 +24,7 @@ const socmeds = [
 export default function Footer() {
   return (
     <footer
+      id="footer"
       className={`${ntr.className} gap-2 p-6 w-full text-md `} 
     >
       <div className="flex items-center gap-4 mb-3">

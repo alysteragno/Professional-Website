@@ -73,4 +73,7 @@ body {
   animation: jump-twice 2s ease-in-out 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 

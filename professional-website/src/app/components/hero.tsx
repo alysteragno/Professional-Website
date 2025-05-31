@@ -42,7 +42,9 @@ export default function Hero() {
           </Link>
         </h2>
       </div>
-      <Arrow/>
+      <div className=''>
+       <Arrow/>
+      </div>
     </main>
   );
 }
