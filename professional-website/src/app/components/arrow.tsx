@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Arrow() {
   return (
-    <Link href="#footer">
+    <Link href="#skills">
       <Image 
         src="/arrow.svg"
         alt="Arrow Icon"
