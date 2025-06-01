@@ -3,7 +3,6 @@ import { Inter, NTR } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Skills from './components/skills'
   
 const inter = Inter({
   variable: "--font-inter",
@@ -38,9 +37,8 @@ export default function RootLayout({children,}:
           <Header/>
             <main className="flex-grow">
               {children}
-              <Skills/>
             </main>
-      <Footer/>
+          <Footer/>
         </div>
       </body>
     </html>
