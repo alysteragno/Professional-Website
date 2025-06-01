@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
+import Skills from './components/skills'
   
 const inter = Inter({
   variable: "--font-inter",
@@ -39,7 +40,7 @@ export default function RootLayout({children,}:
             <main className="flex-grow">
               <Hero/>
               {children}
-              
+              <Skills/>
             </main>
       <Footer/>
         </div>
