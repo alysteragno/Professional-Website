@@ -8,9 +8,19 @@ const skills = [
     url: 'https://react.dev/',
   },
   {
+    name: 'Next.js',
+    image: 'nextjs.svg',
+    url: 'https://nextjs.org/docs',
+  },
+  {
     name: 'Tailwind CSS',
     image: 'tailwind.svg',
     url: 'https://tailwindcss.com/',
+  },
+  {
+    name: 'Git',
+    image: 'git.svg',
+    url: 'https://git-scm.com/',
   },
   {
     name: 'Vite',
@@ -39,7 +49,7 @@ const skills = [
   },
   {
     name: 'Sass',
-    image: 'sass.svg',
+    image: 'sass.png',
     url: 'https://sass-lang.com/',
   },
 ];
@@ -48,15 +58,15 @@ export default function Skills() {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="flex flex-col gap-3">
         {skills.map((skill) => (
           <Link key={skill.name} href={skill.url} target="_blank">
-            <div className="flex flex-col items-center hover:scale-105 transition-transform duration-200">
+            <div className="hover:scale-105 hover:transition-transform duration-200">
               <Image
-                src={`/skills/${skill.image}`} // Make sure your SVGs are in /public/skills/
+                src={`/skills/${skill.image}`} 
                 alt={skill.name}
-                width={64}
-                height={64}
+                width={40}
+                height={40}
               />
               <span className="mt-2 text-sm">{skill.name}</span>
             </div>
