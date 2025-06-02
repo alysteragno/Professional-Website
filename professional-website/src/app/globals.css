@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #CCD6F6;    /* primary: light bluish */
-  --color-secondary: #C084FC;  /* secondary: purple */
-  --color-tertiary: #BBF7D0;   /* tertiary or accent: mint green */
+  --color-primary: #CCD6F6;
+  --color-secondary: #C084FC;
+  --color-tertiary: #BBF7D0;
+  --color-quaternary: #8892B0;
   --font-ntr: 'NTR', sans-serif;
-
-   --background: white;
+  --background: white;
   --foreground: var(--color-primary);
 }
+
 
 body {
   font-family: var(--font-ntr);
@@ -58,6 +59,10 @@ body {
 
 .text-footerfont {
   color: var(--color-footerfont);
+}
+
+.text-quaternary {
+  color: var(--color-quaternary);
 }
 
 @keyframes jump-twice {

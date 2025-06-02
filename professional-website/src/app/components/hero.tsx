@@ -41,10 +41,12 @@ export default function Hero() {
             Front-End Developer
           </Link>
         </h2>
-        <p>
-          An aspiring Software Developer based in Manila, Philippines. <br/>
-          I specialize in building modern web applications using React and Next.js. Currently focused on mastering full-stack development.
-        </p>
+        <div className='mt-2'>
+          <p className='text-lg text-quaternary'>
+            An aspiring Software Developer based in Manila, Philippines. <br/>
+            I specialize in building modern web applications using React and Next.js. Currently focused on mastering full-stack development.
+          </p>
+        </div>
       </div>
       <div className=''>
        <Arrow/>
