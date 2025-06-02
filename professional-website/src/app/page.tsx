@@ -2,8 +2,8 @@ import Hero from "./components/hero"
 
 export default function Home() {
   return (
-    <>
-    <Hero/>
-    </>
+    <div className="mx-3">
+      <Hero/>
+    </div>
   );
 }
