@@ -56,7 +56,8 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="p-6" id='skills'>
+    <section className="p-6" 
+             id='skills'>
   <h2 className="text-2xl font-bold mb-4">Skills</h2>
   <div className="flex ">
     <div>

@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 export default function Arrow() {
 
   useEffect(() => {
+
     const navEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
     if (navEntry?.type === 'reload') {
       const hero = document.getElementById('hero');
@@ -25,8 +26,7 @@ export default function Arrow() {
   
   return (
     <Link href="#skills"
-          id="skills"
-          onClick={(handleClick)}>
+          onClick={handleClick}>
       <Image 
         src="/arrow.svg"
         alt="Arrow Icon"
