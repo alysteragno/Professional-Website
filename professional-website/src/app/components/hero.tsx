@@ -11,7 +11,8 @@ export default function Hero() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
       <div className="text-center py-10">
-        <h1 className="text-4xl font-bold animate-jump-twice">
+        <h1 className="text-4xl font-bold animate-jump-twice"
+            id='hero'>
           Hi there! I'm{' '}
           <Link
             href={links.linkedin}
