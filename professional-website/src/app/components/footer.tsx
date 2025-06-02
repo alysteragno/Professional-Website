@@ -41,7 +41,7 @@ export default function Footer() {
               width={30}
               height={30} 
               alt="Social Media Logo"
-              className="lg:w-9"
+              className="lg:w-6.5 lg:w-6.5"
             />
             </Link>
         ))}
@@ -51,11 +51,11 @@ export default function Footer() {
         <div className="sm:flex sm:justify-center sm:items-center">
           <Link 
               href="https://www.linkedin.com/in/alyster-marasigan-9314692ba/" target="_blank" rel="linkedin link">
-              <h3 className="hover:underline font-bold lg:text-xl">Developed by Alyster A.</h3>
+              <h3 className="hover:underline font-bold lg:text-md">Developed by Alyster A.</h3>
           </Link>
         </div>
         <div className="lg:flex">
-          <h4 className="sm:flex sm:justify-center 
+          <h4 className="sm:flex sm:justify-center lg:text-sm
                         ">All rights reserved.</h4>
         </div>
       </div>
