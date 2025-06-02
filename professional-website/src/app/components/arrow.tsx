@@ -7,6 +7,8 @@ export default function Arrow() {
 
   useEffect(() => {
 
+        // Detects a full reload on page (modern method for App Router)
+ 
     const navEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
     if (navEntry?.type === 'reload') {
       const hero = document.getElementById('hero');
@@ -16,6 +18,7 @@ export default function Arrow() {
     }
   }, []);
 
+        //function named handleClick which handles an event when clicked scrolls to skills componentx` 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const skills = document.getElementById('skills');
