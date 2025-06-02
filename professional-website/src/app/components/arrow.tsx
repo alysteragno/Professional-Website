@@ -10,7 +10,7 @@ export default function Arrow() {
         alt="Arrow Icon"
         width={50}
         height={50}
-        className="inline-block transition-transform duration-300 ease-in-out hover:translate-y-1 cursor-pointer rotate-90 animate-pulse"
+        className="inline-block tra nsition-transform duration-300 ease-in-out hover:translate-y-1 cursor-pointer rotate-90 animate-pulse"
       />
     </Link>
   );

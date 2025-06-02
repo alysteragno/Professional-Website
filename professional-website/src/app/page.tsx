@@ -3,9 +3,9 @@ import Skills from "./components/skills"
 
 export default function Home() {
   return (
-    <>
-    <Hero/>
-    <Skills/>
-    </>
+    <div className="mx-3">
+      <Hero/>
+      <Skills/>
+    </div>
   );
 }
