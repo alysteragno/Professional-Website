@@ -31,6 +31,7 @@ export default function SocialLinks() {
               width={30}
               height={30}
               alt={`${name} Logo`}
+              className="lg:w-9"
             />
           </Link>
     ))}

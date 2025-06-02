@@ -24,10 +24,10 @@ const socmeds = [
 export default function Footer() {
   return (
     <footer
-      id="footer"
-      className={`${ntr.className} gap-2 p-6 w-full text-md `} 
+      className={`${ntr.className} gap-2 p-6 w-full text-md 
+              lg:flex lg:items-center lg:justify-center lg:p-9`} 
     >
-      <div className="flex items-center gap-4 mb-3">
+      <div className="flex items-center gap-4 mb-3 sm:flex sm:justify-center sm:items-center">
        
         {socmeds.map(({ name , url, icon }) => (
           <Link
@@ -41,19 +41,23 @@ export default function Footer() {
               width={30}
               height={30} 
               alt="Social Media Logo"
+              className="lg:w-9"
             />
             </Link>
         ))}
          <SocialLinks />
       </div>
-      <div>
-        <Link 
-            href="https://www.linkedin.com/in/alyster-marasigan-9314692ba/" target="_blank" rel="linkedin link">
-            <h3 className="hover:underline font-bold desktop:hidden">Developed by Alyster A.</h3>
-        </Link>
-      </div>
-      <div>
-        <h4 className="desktop:hidden">All rights reserved.</h4>
+      <div className="lg:flex lg:flex-col">
+        <div className="sm:flex sm:justify-center sm:items-center">
+          <Link 
+              href="https://www.linkedin.com/in/alyster-marasigan-9314692ba/" target="_blank" rel="linkedin link">
+              <h3 className="hover:underline font-bold lg:text-xl">Developed by Alyster A.</h3>
+          </Link>
+        </div>
+        <div className="lg:flex">
+          <h4 className="sm:flex sm:justify-center 
+                        ">All rights reserved.</h4>
+        </div>
       </div>
     </footer>
   );
