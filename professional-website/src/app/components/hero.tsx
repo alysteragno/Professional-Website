@@ -42,8 +42,8 @@ export default function Hero() {
           </Link>
         </h2>
         <div className='mt-2'>
-          <p className='text-lg text-quaternary'>
-            An aspiring Software Developer based in Manila, Philippines. <br/>
+          <p className='text-lg text-quaternary md:w-180 '>
+            An aspiring Software Developer based in Manila, Philippines.
             I specialize in building modern web applications using React and Next.js. Currently focused on mastering full-stack development.
           </p>
         </div>
