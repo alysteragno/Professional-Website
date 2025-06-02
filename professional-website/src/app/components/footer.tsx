@@ -41,7 +41,7 @@ export default function Footer() {
               width={30}
               height={30} 
               alt="Social Media Logo"
-              className="lg:w-6.5 lg:w-6.5"
+              className="lg:w-6.5 aniscale"
             />
             </Link>
         ))}
