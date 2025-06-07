@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import SkillList from './skillList';
+
 
 const skills = [
   {
@@ -18,19 +20,9 @@ const skills = [
     url: 'https://tailwindcss.com/',
   },
   {
-    name: 'Git',
-    image: 'git.svg',
-    url: 'https://git-scm.com/',
-  },
-  {
     name: 'Vite',
     image: 'vite.svg',
     url: 'https://vitejs.dev/',
-  },
-  {
-    name: 'Figma',
-    image: 'figma.svg',
-    url: 'https://figma.com/',
   },
   {
     name: 'HTML',
@@ -54,6 +46,33 @@ const skills = [
   },
 ];
 
+const skillList = [
+  {
+    name: 'Node.js',
+    image: 'nodejs.svg',
+    url: 'https://nodejs.org/en/about',
+  },
+  
+  {
+    name: 'PostgreSQL',
+    image: 'postgresql.svg',
+    url: 'https://www.postgresql.org/',
+  },
+]
+
+const tools = [
+  {
+    name: 'Git',
+    image: 'git.svg',
+    url: 'https://git-scm.com/',
+  },
+  {
+    name: 'Figma',
+    image: 'figma.svg',
+    url: 'https://figma.com/',
+  },
+]
+
 export default function Skills() {
   return (
     <section className="p-6" 
@@ -64,11 +83,11 @@ export default function Skills() {
     <h2 className="text-xl font-bold mb-4">Back-End</h2>
     <h2 className="text-xl font-bold mb-4">Tools</h2>
   </div>
-  <div className="flex">
+  <div className="flex justify-between">
     <div>
       {skills.map((skill) => (
         <Link key={skill.name} href={skill.url} target="_blank">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-4 ">
             <Image
               src={`/skills/${skill.image}`} 
               alt={skill.name}
@@ -83,7 +102,13 @@ export default function Skills() {
         </Link>
       ))}
     </div>
-  </div>
+      <div>
+        <SkillList skills={skillList}/>
+      </div>
+      <div>
+        <SkillList skills={tools}/>
+      </div>
+    </div>
 </section>
 
   );
