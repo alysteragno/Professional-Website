@@ -20,7 +20,7 @@ export default function SkillList({ skills }: SkillListProps) {
             href={skill.url} 
             target="_blank"
             rel="noopener noreferrer">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center my-7">
             <Image
               src={`/skills/${skill.image}`}
               alt={skill.name}

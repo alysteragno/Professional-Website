@@ -58,6 +58,11 @@ const skillList = [ //this is backend skill list
     image: 'postgresql.svg',
     url: 'https://www.postgresql.org/',
   },
+  {
+    name: 'Prisma',
+    image: 'prisma.svg',
+    url: 'https://www.prisma.io/about',
+  },
 ]
 
 const tools = [
@@ -69,6 +74,11 @@ const tools = [
   {
     name: 'Figma',
     image: 'figma.svg',
+    url: 'https://figma.com/',
+  },
+  {
+    name: 'Github',
+    image: 'professional-website\public\githubLogo.svg',
     url: 'https://figma.com/',
   },
 ]
@@ -83,7 +93,7 @@ export default function Skills() {
       <h2 className="text-xl font-bold mb-4 text-center">Front-End</h2>
       {skills.map((skill) => (
         <Link key={skill.name} href={skill.url} target="_blank">
-          <div className="flex items-center mb-4 ">
+          <div className="flex items-center my-7">
             <Image
               src={`/skills/${skill.image}`} 
               alt={skill.name}
