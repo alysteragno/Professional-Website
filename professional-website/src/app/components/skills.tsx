@@ -58,8 +58,13 @@ export default function Skills() {
   return (
     <section className="p-6" 
              id='skills'>
-  <h2 className="text-2xl font-bold mb-4">Skills</h2>
-  <div className="flex ">
+  <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
+  <div className='flex justify-between'>
+    <h2 className="text-xl font-bold mb-4">Front-End</h2>
+    <h2 className="text-xl font-bold mb-4">Back-End</h2>
+    <h2 className="text-xl font-bold mb-4">Tools</h2>
+  </div>
+  <div className="flex">
     <div>
       {skills.map((skill) => (
         <Link key={skill.name} href={skill.url} target="_blank">
