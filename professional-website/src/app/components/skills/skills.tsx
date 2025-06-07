@@ -46,7 +46,7 @@ const skills = [
   },
 ];
 
-const skillList = [
+const skillList = [ //this is backend skill list
   {
     name: 'Node.js',
     image: 'nodejs.svg',
@@ -77,14 +77,10 @@ export default function Skills() {
   return (
     <section className="p-6" 
              id='skills'>
-  <h2 className="text-3xl font-bold mb-4 text-center">Skills</h2>
-  <div className='flex justify-between'>
-    <h2 className="text-xl font-bold mb-4">Front-End</h2>
-    <h2 className="text-xl font-bold mb-4">Back-End</h2>
-    <h2 className="text-xl font-bold mb-4">Tools</h2>
-  </div>
-  <div className="flex justify-between">
+  <h2 className="text-3xl font-bold mb-4 text-center border-b-1">Skills</h2>
+  <div className="flex justify-between mt-7">
     <div>
+      <h2 className="text-xl font-bold mb-4 text-center">Front-End</h2>
       {skills.map((skill) => (
         <Link key={skill.name} href={skill.url} target="_blank">
           <div className="flex items-center mb-4 ">
@@ -103,9 +99,11 @@ export default function Skills() {
       ))}
     </div>
       <div>
+        <h2 className="text-xl font-bold mb-4 text-center">Back-End</h2>
         <SkillList skills={skillList}/>
       </div>
       <div>
+        <h2 className="text-xl font-bold mb-4 text-center">Tools</h2>
         <SkillList skills={tools}/>
       </div>
     </div>
