@@ -38,9 +38,8 @@ export default function SkillList({ skills }: SkillListProps) {
 
             {/* Right: Mastery Progress */}
           {skill.mastery !== undefined && (
-  <Animation mastery={skill.mastery} />
-)}
-
+          <Animation mastery={skill.mastery} />
+        )}
           </div>
         </Link>
       ))}
