@@ -53,17 +53,20 @@ export const skillList = [ //this is backend skill list
     name: 'Node.js',
     image: 'nodejs.svg',
     url: 'https://nodejs.org/en/about',
+    mastery: 20,
   },
   
   {
     name: 'PostgreSQL',
     image: 'postgresql.svg',
     url: 'https://www.postgresql.org/',
+    mastery: 0,
   },
   {
     name: 'Prisma',
     image: 'prisma.svg',
     url: 'https://www.prisma.io/about',
+    mastery: 0,
   },
 ]
 
@@ -72,16 +75,19 @@ export const tools = [
     name: 'Git',
     image: 'git.svg',
     url: 'https://git-scm.com/',
+    mastery: 80,
   },
   {
     name: 'Figma',
     image: 'figma.svg',
     url: 'https://figma.com/',
+    mastery: 70,
   },
   {
     name: 'Github',
-    image: 'professional-website\public\githubLogo.svg',
+    image: 'githubLogo.svg',
     url: 'https://figma.com/',
+    mastery: 80,
   },
 ]
 
@@ -114,8 +120,9 @@ export default function Skills() {
     </div>
       <div>
         <h2 className="text-xl font-bold mb-4 text-center">Back-End</h2>
+
+        </div>
         <SkillList skills={skillList}/>
-      </div>
          <div>
         <h2 className="text-xl font-bold mb-4 text-center">Tools</h2>
         <SkillList skills={tools}/>
