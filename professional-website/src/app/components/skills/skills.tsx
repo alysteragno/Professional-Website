@@ -87,7 +87,13 @@ export default function Skills() {
   return (
     <section className="p-6" 
              id='skills'>
-  <h2 className="text-3xl font-bold mb-4 text-center border-b-1">Skills</h2>
+  <h2
+  className="text-3xl font-bold mb-4 pb-3 text-center border-b-[0.1px]"
+  style={{ borderColor: "var(--color-quaternary)" }}
+>
+  Skills
+</h2>
+
   <div className="flex justify-between mt-7">
     <div>
       <h2 className="text-xl font-bold mb-4 text-center">Front-End</h2>
