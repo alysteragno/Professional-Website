@@ -25,6 +25,12 @@ body {
   --font-mono: var(--font-geist-mono);
 }
 
+.component-name {
+  @apply text-3xl font-bold mb-4 pb-3 text-center border-b;
+  border-bottom-width: 0.1px;
+  border-color: var(--color-quaternary);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a192f;

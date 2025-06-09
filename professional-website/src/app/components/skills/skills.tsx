@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SkillList from './skillList';
+import SkillsInfo from './skillsInfo';
 
 
-const skills = [
+export const skills = [
   {
-    name: 'React',
-    image: 'react.svg',
-    url: 'https://react.dev/',
+      name: 'React',
+      image: 'react.svg',
+      url: 'https://react.dev/',
   },
   {
     name: 'Next.js',
@@ -46,7 +47,7 @@ const skills = [
   },
 ];
 
-const skillList = [ //this is backend skill list
+export const skillList = [ //this is backend skill list
   {
     name: 'Node.js',
     image: 'nodejs.svg',
@@ -65,7 +66,7 @@ const skillList = [ //this is backend skill list
   },
 ]
 
-const tools = [
+export const tools = [
   {
     name: 'Git',
     image: 'git.svg',
@@ -123,6 +124,7 @@ export default function Skills() {
         <SkillList skills={tools}/>
       </div>
     </div>
+    <SkillsInfo/>
 </section>
 
   );
