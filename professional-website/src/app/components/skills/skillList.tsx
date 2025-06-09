@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Animation from './AnimatedProgress';
 
 type Skill = {
   name: string;
@@ -36,13 +37,10 @@ export default function SkillList({ skills }: SkillListProps) {
             </div>
 
             {/* Right: Mastery Progress */}
-            {skill.mastery !== undefined && (
-              <progress
-                className="progress w-56 ml-auto"
-                value={skill.mastery}
-                max="100"
-              />
-            )}
+          {skill.mastery !== undefined && (
+  <Animation mastery={skill.mastery} />
+)}
+
           </div>
         </Link>
       ))}
