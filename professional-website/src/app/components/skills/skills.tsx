@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SkillList from './skillList';
-import SkillsInfo from './skillsInfo';
+import SkillsInfo from './mastery';
 
 
 export const skills = [
