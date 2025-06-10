@@ -1,7 +1,7 @@
 import Hero from "./components/hero"
 import Skills from "./components/skills/skills"
 import Carousel from "./components/carousel"
-import Education from "./components/education"
+import Education from "./components/education/education"
 
 export default function Home() {
   return (
