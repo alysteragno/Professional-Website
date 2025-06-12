@@ -6,14 +6,16 @@ import Contact from "./components/contactme/contact"
 
 export default function Home() {
   return (
-    <div className="mx-3 sm:mx-8 lg:mx-[15em] space-y-25">
+    <div className="mx-3 sm:mx-8 lg:mx-[15em] space-y-25 flex flex-col">
       <Hero/>
       <Skills/>
       <Carousel/>
       <div className="my-[7em]">
        <Education/>
       </div>
-      <Contact/>
+      <div className="my-[9em]">
+        <Contact/>
+      </div>
     </div>
   );
 }
