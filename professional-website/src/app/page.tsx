@@ -2,6 +2,7 @@ import Hero from "./components/hero"
 import Skills from "./components/skills/skills"
 import Carousel from "./components/carousel"
 import Education from "./components/education/education"
+import Contact from "./components/contactme/contact"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <div className="my-[7em]">
        <Education/>
       </div>
+      <Contact/>
     </div>
   );
 }
