@@ -5,11 +5,13 @@ import Education from "./components/education/education"
 
 export default function Home() {
   return (
-    <div className="mx-3">
+    <div className="mx-3 sm:mx-8 lg:mx-[15em] space-y-25">
       <Hero/>
       <Skills/>
       <Carousel/>
-      <Education/>
+      <div className="my-[7em]">
+       <Education/>
+      </div>
     </div>
   );
 }
