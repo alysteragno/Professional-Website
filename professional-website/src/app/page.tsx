@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className="mx-3 sm:mx-8 lg:mx-[15em] space-y-25 flex flex-col">
       <Hero/>
-      <Skills/>
+      <div className="items-center flex justify-center">
+        <Skills/>
+      </div>
       <Carousel/>
       <div className="my-[7em]">
        <Education/>

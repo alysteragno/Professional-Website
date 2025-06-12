@@ -2,19 +2,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { schools } from './arraySchool'; 
-import Line from '../line';
+import ComponentName from '../sectionName'
 
 export default function Education() {
     return (
         <section className="p-6 lg:mx-40" id="education">
             <div className="lg:flex lg:justify-start lg:pt-4">
-                <h2
-                    className="text-3xl font-bold mb-4 lg:pb-0 pb-3 text-center  lg:text-4xl border-b-[0.1px] lg:border-0"
-                    style={{ borderColor: "var(--color-quaternary)" }}
-                >
-                    Education
-                </h2>
-                <Line />
+                <ComponentName name="Education" />
             </div>
 
             <div className="flex flex-col justify-center items-center lg:inline-block">

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import SkillList from './skillList';
-import Line from '../line';
-
+import ComponentName from '../sectionName';
 
 export const skills = [
   {
@@ -94,20 +93,9 @@ export const tools = [
 
 export default function Skills() {
   return (
-    <section className="p-6 lg:mx-40" 
+    <section className="lg:max-w-[50em] w-full" 
              id='skills'>
-              <div className='lg:flex '>
-  <h2
-  className="text-3xl font-bold mb-4 pb-3 text-center border-b-[0.1px] 
-             lg:border-0 lg:text-start lg:text-4xl"
-  style={{ borderColor: "var(--color-quaternary)" }}
->
-  Skills
-</h2>
-  <Line/>
-  </div>
-
-
+             <ComponentName name='Skills' />
   <div className="mt-7">
     <div>
       <h2 className="text-xl font-bold mb-4 text-center">Front-End</h2>
@@ -128,12 +116,11 @@ export default function Skills() {
     </div>
       <div>
         <h2 className="text-xl font-bold mb-4 text-center">Back-End</h2>
-
         </div>
-        <SkillList skills={skillList}/>
+         <SkillList skills={skillList}/>
          <div>
         <h2 className="text-xl font-bold mb-4 text-center">Tools</h2>
-        <SkillList skills={tools}/>
+         <SkillList skills={tools}/>
       </div>
 </section>
 

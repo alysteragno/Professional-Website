@@ -3,10 +3,10 @@ type Section = {
     name: string;
     className?: string;
 }
-export default function SectionName( { name }: Section ) {
+export default function SectionName( { name, className }: Section ) {
     return (
-        <div className='p-6 
-                        lg:mx-40 lg:flex'>
+        <div className={`p-6 
+                         lg:flex ${className || '' }`}>
             <div>
                 <h2
                     className="text-3xl font-bold mb-4 text-center border-b-[0.1px]

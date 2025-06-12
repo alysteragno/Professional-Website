@@ -53,7 +53,7 @@ export default function AnimatedProgress({ mastery }: AnimatedProgressProps) {
   return (
     <progress
       ref={progressRef}
-      className="progress w-56 ml-auto sm:w-65 md:w-82 lg:w-80"
+      className="progress w-56 ml-auto sm:w-65 md:w-82 lg:w-60"
       value={progress}
       max={100}
     />

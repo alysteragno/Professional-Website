@@ -4,10 +4,8 @@ import ComponentName from '../sectionName'
 export default function Contact() {
     return (
         <div>
-            <div className='lg:px-21 '>
-                <ComponentName
-                    name="Contact me"
-                />
+            <div className='lg:px-21 lg:mx-40'>
+                <ComponentName name = "Contact me" />
             </div>
             <div className="flex flex-col items-center w-full">
                 <div>
@@ -25,13 +23,7 @@ export default function Contact() {
                     </div>
 
                     {/* Email Input */}
-                    <div className='items-center flex justify-center my-5'>
-                        <ContactInput
-                            id="email"
-                            placeholder="Email"
-                            className="hidden"
-                        />
-                    </div>      
+                    
                     <div className="w-full">
                     <textarea
                         id="message"
