@@ -17,7 +17,7 @@ export default function ContactInput( { id, placeholder, className } : Props ) {
                 id={id}
                 name={id}
                 placeholder={placeholder}
-                className={`border-2 border-gray-300 rounded-md p-3 mb-4 focus:outline-none focus:ring-1 focus:ring-white-500 resize-none ${className || '' }`}
+                className={`border-2 border-[#8892B0] rounded-md p-3 mb-4 focus:outline-none focus:ring-1 focus:ring-white-500 resize-none ${className || '' }`}
             />
             </form>
          

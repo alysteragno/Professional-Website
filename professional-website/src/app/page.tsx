@@ -15,7 +15,7 @@ export default function Home() {
       <div className="my-[7em]">
        <Education/>
       </div>
-      <div className="my-[9em]">
+      <div className="my-[9em] mx-0">
         <Contact/>
       </div>
     </div>
