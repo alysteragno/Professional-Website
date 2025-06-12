@@ -18,6 +18,7 @@ export default function SkillList({ skills }: SkillListProps) {
     <div className="space-y-4">
       {skills.map((skill) => (
         <Link 
+        
           key={skill.name}
           href={skill.url}
           target="_blank"

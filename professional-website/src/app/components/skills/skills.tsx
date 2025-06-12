@@ -106,7 +106,11 @@ export default function Skills() {
     <div>
       <h2 className="text-xl font-bold mb-4 text-center">Front-End</h2>
       {skills.map((skill) => (
-        <Link key={skill.name} href={skill.url} target="_blank">
+        <Link 
+          key={skill.name} 
+          href={skill.url} 
+          target="_blank"
+        >
           <div className="justify-between my-7">
             <div>
               <SkillList skills={[skill]} />
@@ -115,8 +119,6 @@ export default function Skills() {
         </Link>
       ))}
     </div>
-    
-   
     </div>
       <div>
         <h2 className="text-xl font-bold mb-4 text-center">Back-End</h2>
