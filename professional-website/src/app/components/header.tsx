@@ -6,7 +6,7 @@ const openSans = Open_Sans({ subsets: ['latin'], weight: ['400'] });
 
 export default function Header() {
   return (
-    <header className={`${openSans.className}  fixed top-0 w-full justify-between flex items-center p-4 bg-background z-100`}>
+    <header className={`${openSans.className}  fixed top-0 w-full lg:px-50 justify-between flex items-center p-4 bg-background z-100`}>
       <div>
         <a href="#">
           <h3 className='text-lg leading-4 tracking-wide font-bold'>ALYSTER A.</h3>

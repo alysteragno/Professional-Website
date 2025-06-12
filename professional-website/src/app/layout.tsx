@@ -34,7 +34,7 @@ export default function RootLayout({children,}:
       <body
         className={`${inter.variable} ${ntr.variable} antialiased`}>
         <div className="min-h-screen flex flex-col"> 
-          <Header/>
+          <Header/>   
             <main className="flex-grow">
               {children}
             </main>
