@@ -26,7 +26,7 @@ export default function SkillList({ skills }: SkillListProps) {
           aria-label={`Learn more about ${skill.name}`}
           className="block"
         >
-          <div className="flex items-center justify-between my-2">
+          <div className="flex items-center justify-between my-2 sm:px-15">
             <div className="flex items-center">
               <Image
                 src={`/skills/${skill.image}`}

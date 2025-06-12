@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SkillList from './skillList';
+import Line from '../line';
 
 
 export const skills = [
@@ -93,14 +94,19 @@ export const tools = [
 
 export default function Skills() {
   return (
-    <section className="p-6" 
+    <section className="p-6 lg:mx-40" 
              id='skills'>
+              <div className='lg:flex '>
   <h2
-  className="text-3xl font-bold mb-4 pb-3 text-center border-b-[0.1px]"
+  className="text-3xl font-bold mb-4 pb-3 text-center border-b-[0.1px] 
+             lg:border-0 lg:text-start lg:text-4xl"
   style={{ borderColor: "var(--color-quaternary)" }}
 >
   Skills
 </h2>
+  <Line/>
+  </div>
+
 
   <div className="mt-7">
     <div>
