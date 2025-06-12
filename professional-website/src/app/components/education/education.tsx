@@ -6,12 +6,13 @@ import ComponentName from '../sectionName'
 
 export default function Education() {
     return (
-        <section className="p-6 lg:mx-40" id="education">
-            <div className="lg:flex lg:justify-start lg:pt-4">
+        <section className="p-6" id="education">
+            <div className="lg:flex lg:justify-center lg:pt-4">
                 <ComponentName name="Education" />
             </div>
 
-            <div className="flex flex-col justify-center items-center lg:inline-block">
+            <div className="flex flex-col justify-center items-center 
+                            lg:flex">
                 {schools.map((school) => (
                     <Link
                         prefetch={true}
