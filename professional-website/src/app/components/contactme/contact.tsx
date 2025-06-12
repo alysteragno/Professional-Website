@@ -4,7 +4,7 @@ import ComponentName from '../sectionName'
 export default function Contact() {
     return (
         <div>
-            <div className='lg:px-21 lg:mx-40'>
+            <div className='lg:flex lg:justify-center'>
                 <ComponentName name = "Contact me" />
             </div>
             <div className="flex flex-col items-center w-full">
