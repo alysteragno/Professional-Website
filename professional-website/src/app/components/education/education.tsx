@@ -6,7 +6,7 @@ import Line from '../line';
 
 export default function Education() {
     return (
-        <section className="p-6" id="education">
+        <section className="p-6 lg:mx-40" id="education">
             <div className="lg:flex lg:justify-start lg:pt-4">
                 <h2
                     className="text-3xl font-bold mb-4 lg:pb-0 pb-3 text-center  lg:text-4xl border-b-[0.1px] lg:border-0"
