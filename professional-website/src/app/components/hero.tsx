@@ -51,7 +51,7 @@ export default function Hero() {
           Based in 
           <a href="https://www.britannica.com/place/Manila" 
              target='blank'>
-            <span className='font-bold text-tertiary text-2xl hover:underline'> Manila, Philippines.</span> 
+            <span className='font-bold text-tertiary text-xl hover:underline'> Manila, Philippines. </span> 
           </a> 
             I specialize in building web applications using 
           <a href="https://www.geeksforgeeks.org/reactjs/reactjs-introduction/"
