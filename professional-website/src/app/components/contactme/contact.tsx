@@ -1,17 +1,32 @@
-import ContactInput from '../contactme/contactInput';
+'use client';
+import ContactInput from '../contactme/contactInput'
 import ComponentName from '../sectionName'
+import { useForm } from 'react-hook-form'
 
-const onFormSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+
+type FormData = {
+    firstName: string;
+    lastName: string;
+    email: string;
+    message: string;
 }
 export default function Contact() {
+
+    const {
+        register,
+        handleSubmit,
+        } = useForm<FormData>()
+    
+    const onFormSubmit = async (formData: FormData) => {
+        console.log(formData)
+    }
     return (
         <div>
             <div className='lg:flex lg:justify-center'>
                 <ComponentName name = "Contact me !" />
             </div>
             <div className="flex flex-col items-center">
-                <form>
+                <form onSubmit={handleSubmit(onFormSubmit)}>
                     <div>
                         <div className="flex justify-between  w-[29em] lg:w-[35em]">
                             <div className='flex justify-between w-full'>
@@ -22,6 +37,7 @@ export default function Contact() {
                                     required={true}
                                     minLength={3}
                                     pattern="^[^\d]*$"
+                                    {...register('firstName',)}
                                 />
                                 <ContactInput 
                                     id="lastname"
@@ -30,6 +46,7 @@ export default function Contact() {
                                     required={true}
                                     minLength={3}
                                     pattern="^[^\d]*$"
+                                    {...register('lastName',)}
                                 />
                             </div>
                         </div>
@@ -42,6 +59,7 @@ export default function Contact() {
                                 className='w-full'
                                 required={true}
                                 minLength={10}
+                                {...register('email',)}
                             />
                         </div>
                         <div className="w-full">
@@ -50,6 +68,7 @@ export default function Contact() {
                             placeholder="Your Message"
                             className="w-full h-32 p-3 border-2 border-[#8892B0] rounded-md focus:outline-none focus:ring-2 focus:ring-white-500 resize-none"
                             required={true}
+                            {...register('message',)}
                         />
                         </div>
 
