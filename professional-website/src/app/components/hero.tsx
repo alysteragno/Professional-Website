@@ -11,7 +11,10 @@ export default function Hero() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center"
           id='hero'>
-      <div className="text-center py-10">
+      <div className="text-center py-10
+                      md:mx-10
+                      lg:px-40
+                      ">
         <h1 className="text-4xl font-bold animate-jump-twice">
           Hi there! I'm{' '}
           <Link
@@ -42,14 +45,34 @@ export default function Hero() {
             Front-End Developer
           </Link>
         </h2>
-        <div className='mt-2'>
-          <p className='text-lg text-quaternary md:w-180 '>
-            An aspiring Software Developer based in Manila, Philippines.
-            I specialize in building modern web applications using React and Next.js. Currently focused on mastering full-stack development.
-          </p>
-        </div>
+      <div className='mt-2'>
+      <div className='flex'>
+        <p className='text-lg text-primary'>
+          Based in 
+          <a href="https://www.britannica.com/place/Manila" 
+             target='blank'>
+            <span className='font-bold text-tertiary text-2xl hover:underline'> Manila, Philippines.</span> 
+          </a> 
+            I specialize in building web applications using 
+          <a href="https://www.geeksforgeeks.org/reactjs/reactjs-introduction/"
+             target='blank' 
+             className='hover:underline'
+            >
+            <span className='font-semibold text-tertiary'> React</span>
+          </a> and 
+
+          <a href="https://nextjs.org/docs"
+             target='blank'
+             className='hover:underline'>
+           <span className='font-semibold text-secondary'> Next JS. </span> 
+          </a>
+          
+          Currently focused on mastering full-stack development.
+        </p>
       </div>
-      <div className=''>
+      </div>
+      </div>
+      <div>
        <Arrow/>
       </div>
     </main>
