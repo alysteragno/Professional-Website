@@ -8,7 +8,12 @@ type Props = {
     pattern?: string;
 };
 
-export default function ContactInput( { id, placeholder, className, required, minLength, pattern } : Props ) {
+export default function ContactInput( { 
+    id, placeholder, 
+    className, 
+    required, 
+    minLength, 
+    pattern } : Props ) {
     return (
         <input  
             type="text" 

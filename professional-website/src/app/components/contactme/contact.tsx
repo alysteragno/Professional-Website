@@ -1,6 +1,9 @@
 import ContactInput from '../contactme/contactInput';
 import ComponentName from '../sectionName'
 
+const onFormSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+}
 export default function Contact() {
     return (
         <div>

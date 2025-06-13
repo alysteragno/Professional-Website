@@ -1,7 +1,11 @@
 {
   "dependencies": {
     "daisyui": "^5.0.43",
-    "styled-components": "^6.1.18"
+    "nodemailer": "^7.0.3",
+    "react-hook-form": "^7.57.0",
+    "react-hot-toast": "^2.5.2",
+    "styled-components": "^6.1.18",
+    "zod": "^3.25.64"
   },
   "devDependencies": {
     "tailwindcss-animated": "^2.0.0"
