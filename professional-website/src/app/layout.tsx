@@ -3,17 +3,20 @@ import { Inter, NTR } from "next/font/google";
 import './globals.css';
 import Header from "./components/header";
 import Footer from "./components/footer";
-  
+import Sidebar from "./components/sidebar/sidebar";
+
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
+
 const ntr = NTR({
   variable: "--font-ntr",
   subsets: ["latin"],
-  weight: "400", // NTR has only one weight
+  weight: "400",
   display: "swap",
 });
 
@@ -35,9 +38,12 @@ export default function RootLayout({children,}:
         className={`${inter.variable} ${ntr.variable} antialiased`}>
         <div className="min-h-screen flex flex-col"> 
           <Header/>   
-            <main className="flex-grow">
-              {children}
+          
+            <main className="flex-grow flex justify-end flex-row-reverse">
+              <Sidebar/>
+                {children}
             </main>
+            
           <Footer/>
         </div>
       </body>

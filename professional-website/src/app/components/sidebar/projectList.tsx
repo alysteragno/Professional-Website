@@ -36,6 +36,7 @@ export default function ProjArray({ id, name, video, route, onHover }: Proj) {
             onMouseLeave={() => onHover?.(null)}
           >
           <Link
+            id={id}
             href={route}
             target="_blank"
             rel="noopener noreferrer"
