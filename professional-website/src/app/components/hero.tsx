@@ -11,9 +11,11 @@ export default function Hero() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center"
           id='hero'>
-      <div className="text-center py-10
-                      md:mx-10
-                      lg:px-40
+       <div className="text-center py-10
+                      md:mx-30
+                      lg:mx-5
+                      xl:mx-20
+                      xl:max-w-200
                       ">
         <h1 className="text-4xl font-bold animate-jump-twice">
           Hi there! I'm{' '}
