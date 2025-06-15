@@ -17,7 +17,8 @@ export default function Contact() {
         handleSubmit,
         } = useForm<FormData>()
     
-    const onFormSubmit = async (formData: FormData) => {
+    {/*  This is the submit handler. It logs form data to the console*/}
+    const onFormSubmit = async (formData: FormData) => {    
         console.log(formData)
     }
     return (
@@ -48,6 +49,7 @@ export default function Contact() {
                                     pattern="^[^\d]*$"
                                     {...register('lastName',)}
                                 />
+
                             </div>
                         </div>
 
