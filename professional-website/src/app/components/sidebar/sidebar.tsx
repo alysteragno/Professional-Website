@@ -21,12 +21,9 @@ export default function Sidebar() {
         </div>
         {Projects.map((project) => (
           <div key={project.id} className='mt-4'>
-            
             <ProjArray
-              id={project.id}
-              name={project.name}
-              video={project.video}
-              route={project.route}
+              key={project.id} 
+              {...project}
               onHover={handleHover}
             />
           </div>

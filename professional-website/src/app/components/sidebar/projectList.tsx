@@ -22,6 +22,12 @@ export const Projects: Proj[] = [
     video: "/video/BankSystem.mp4",
     route: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
   },
+  {
+    id: "3",
+    name: "click to rick roll lmfao",
+    video: "/video/BankSystem.mp4",
+    route: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+  },
 ];
 
 export default function ProjArray({ id, name, video, route, onHover }: Proj) {
@@ -31,12 +37,12 @@ export default function ProjArray({ id, name, video, route, onHover }: Proj) {
       <div className="flex">
       <ul>
         <li
+            id={id}
             className="flex flex-col justify-center  hover:scale-105 transition-all rounded-sm"
             onMouseEnter={() => onHover?.(video)}
             onMouseLeave={() => onHover?.(null)}
           >
           <Link
-            id={id}
             href={route}
             target="_blank"
             rel="noopener noreferrer"
