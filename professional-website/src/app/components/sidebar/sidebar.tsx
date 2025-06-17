@@ -14,8 +14,8 @@ export default function Sidebar() {
     setHoveredVideo(video);
   };
   return (
-    <div className="hidden lg:block w-[15em] fixed right-0 z-100 bg-[#0a192f] h-full">
-      <div> 
+    <div className="hidden lg:flex lg:justify-center lg:w-[12.2em] xl:w-[15em] lg:max-w-[15em]  fixed right-0 z-100 bg-[#0a192f] h-full ">
+      <div>  
         <div className='inline-block w-20'>
           <h2 className="mt-25 border-b-1">Portfolio</h2>
         </div>
