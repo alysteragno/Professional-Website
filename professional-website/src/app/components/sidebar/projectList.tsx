@@ -18,8 +18,8 @@ export const Projects: Proj[] = [
   },
   {
     id: "2",
-    name: "Weather App",
-    video: "/video/BankSystem.mp4",
+    name: "Gamified Study Platform",
+    video: "/video/gamifiedStudyPlatform.mp4",
     route: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
   },
   {
@@ -30,6 +30,13 @@ export const Projects: Proj[] = [
   },
   {
     id: "4",
+    name: "Weather App",
+    video: "/video/BankSystem.mp4",
+    route: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
+  },
+ 
+  {
+    id: "5",
     name: "Daybox Animation",
     video: "/video/dayboxAnimation.mp4",
     route: "https://www.youtube.com/watch?v=xvFZjo5PgG0",
